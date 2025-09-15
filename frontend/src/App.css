@@ -1,0 +1,102 @@
+.App {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease;
+}
+
+/* Ensure body and html also get theme colors */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html {
+  transition: background-color 0.3s ease;
+}
+
+/* Custom card hover effects */
+.card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom button styles */
+.btn {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Status badge customizations */
+.badge {
+  font-size: 0.75rem;
+}
+
+/* Form styling */
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Loading spinner */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Alert styling */
+.alert {
+  border: none;
+  border-radius: 0.5rem;
+}
+
+/* Header styling */
+h1 {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+/* Card header styling */
+.card-header {
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+/* Icon styling */
+.bootstrap-icons {
+  vertical-align: -0.125em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .d-flex.justify-content-between {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  
+  .d-flex.justify-content-between .btn {
+    margin-top: 1rem;
+  }
+}
+
+/* Animation for form appearance */
+.card {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
